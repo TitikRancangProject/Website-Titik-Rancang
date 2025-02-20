@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Titik Rancang</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background: url('gambar3.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #EAEAEA;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background: rgba(20, 20, 20, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            box-sizing: border-box;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 1;
+            max-width: 40%;
+            margin-right: 5%;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 25px;
+        }
+        nav ul li a {
+            color: #EAEAEA;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+        .content {
+            
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .content h1, .content h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .content p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        .section-blur {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px auto;
+            max-width: 800px;
+            backdrop-filter: blur(12px);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(20, 20, 20, 0.9);
+            font-size: 0.85rem;
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: #FFD700; margin-left: 5%;"><a href="index.html" style="text-decoration: none; color: #FFD700;">Titik Rancang</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content" id="tentang" style="padding: 120px 10%;">
+        <div class="section-blur">
+            <h1>Tentang Kami</h1>
+            <p>Titik Rancang adalah firma arsitektur yang berdedikasi dalam menciptakan desain inovatif, berkelanjutan, dan estetis. Dengan pendekatan berbasis riset dan teknologi modern, kami menghadirkan solusi arsitektur yang menggabungkan fungsionalitas tinggi dengan keindahan visual, menciptakan ruang yang nyaman dan inspiratif bagi pengguna.</p>
+        </div>
+    </section>
+
+    <section class="content" id="visi" style="padding: 80px 10%;">
+        <div class="section-blur">
+            <h2>Visi</h2>
+            <p>Menjadi perusahaan arsitektur terkemuka yang memberikan dampak positif dalam industri desain dan konstruksi, dengan menghadirkan inovasi berkelanjutan yang menginspirasi dan membentuk masa depan kota serta hunian modern.</p>
+        </div>
+    </section>
+
+    <section class="content" id="misi" style="padding: 80px 10%;">
+        <div class="section-blur">
+            <h2>Misi</h2>
+            <p>1. Menciptakan desain yang mengutamakan keseimbangan antara estetika, fungsionalitas, dan keberlanjutan.<br>
+               2. Menggunakan teknologi dan material ramah lingkungan untuk menciptakan ruang yang lebih efisien dan nyaman.<br>
+               3. Berkolaborasi dengan klien untuk mewujudkan visi mereka melalui pendekatan desain yang inovatif dan berbasis kebutuhan.<br>
+               4. Menyediakan solusi desain yang tidak hanya memenuhi standar teknis tetapi juga memberikan pengalaman ruang yang luar biasa.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Titik Rancang. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>

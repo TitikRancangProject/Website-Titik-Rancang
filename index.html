@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titik Rancang - Arsitektur Masa Depan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background: url('gambar3.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #EAEAEA;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background: rgba(20, 20, 20, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            box-sizing: border-box;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 1;
+            max-width: 40%;
+            margin-right: 5%;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 25px;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: #EAEAEA;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('img/gambar3.jpg') no-repeat center center/cover;
+            text-align: center;
+            width: 100%;
+            padding-top: 80px;
+            position: relative;
+        }
+        .hero-content {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(12px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 80%;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .cta {
+            display: inline-block;
+            background: #FFD700;
+            color: #1A1A1A;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .section {
+            padding: 80px 10%;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service-card {
+            background: #303030;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background: #303030;
+            border: none;
+            color: white;
+        }
+        button {
+            background: #FFD700;
+            color: #1A1A1A;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #202020;
+            font-size: 0.85rem;
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: #FFD700; margin-left: 5%;"><a href="index.html" style="text-decoration: none; color: #FFD700;">Titik Rancang</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="beranda">
+        <div class="hero-content">
+            <h1>Arsitektur yang Mewujudkan Impian</h1>
+            <p>Kami menghadirkan solusi arsitektur inovatif yang menggabungkan estetika luar biasa, fungsionalitas optimal, serta keberlanjutan untuk menciptakan ruang yang tidak hanya indah dipandang, tetapi juga nyaman dan efisien untuk digunakan.</p>
+            <a href="portofolio.html" class="cta">Lihat Portofolio</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Titik Rancang. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>

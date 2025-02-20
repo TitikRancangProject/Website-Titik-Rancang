@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Titik Rancang</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background: url('gambar3.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #EAEAEA;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background: rgba(20, 20, 20, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            box-sizing: border-box;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 1;
+            max-width: 40%;
+            margin-right: 5%;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 25px;
+        }
+        nav ul li a {
+            color: #EAEAEA;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+        .content {
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding: 100px 10%;
+        }
+        .section-blur {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 10px auto;
+            max-width: 800px;
+            backdrop-filter: blur(12px);
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+        .contact-form button {
+            background: #FFD700;
+            color: #1A1A1A;
+            padding: 12px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .contact-info {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(20, 20, 20, 0.9);
+            font-size: 0.85rem;
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: #FFD700; margin-left: 5%;"><a href="index.html" style="text-decoration: none; color: #FFD700;">Titik Rancang</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content" id="kontak">
+        <div class="section-blur">
+            <h1>Kontak Kami</h1>
+            <p>Hubungi kami untuk konsultasi atau pertanyaan lebih lanjut.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Nama" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Pesan" rows="4" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+            <div class="contact-info">
+                <h2>Informasi Perusahaan</h2>
+                <p><strong>Alamat:</strong> Jl. Arsitektur No. 10, Jakarta, Indonesia</p>
+                <p><strong>Telepon:</strong> +62 812-3456-7890</p>
+                <p><strong>Email:</strong> info@titikrancang.com</p>
+                <p><strong>Jam Operasional:</strong> Senin - Jumat, 09:00 - 18:00 WIB</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Titik Rancang. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>
